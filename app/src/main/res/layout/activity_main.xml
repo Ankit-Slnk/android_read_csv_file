@@ -9,13 +9,19 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnDownloadSampleExcel"
+        android:id="@+id/btnDownloadSampleCSV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Download Sample CSV" />
 
     <Button
-        android:id="@+id/btnOpenExcel"
+        android:id="@+id/btnGenerateSampleCSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Sample CSV" />
+
+    <Button
+        android:id="@+id/btnOpenCSV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open CSV" />

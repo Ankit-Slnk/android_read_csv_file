@@ -11,7 +11,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class Utility {
-    public static void downloadSampleExcel(Context context, String path, String outPath) {
+    public static void downloadSampleCSV(Context context, String path, String outPath) {
         AssetManager assetManager = context.getAssets();
         String assets[];
         try {
@@ -24,7 +24,7 @@ public class Utility {
                 if (!dir.exists())
                     if (!dir.mkdir()) Log.e("4356", "No create external directory: " + dir);
                 for (String asset : assets) {
-                    downloadSampleExcel(context, path + "/" + asset, outPath);
+                    downloadSampleCSV(context, path + "/" + asset, outPath);
                 }
             }
         } catch (IOException ex) {
